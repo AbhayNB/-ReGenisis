@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <title>E-waste facility</title>
+</head>
+<body>
+    <div class="main">
+        <h1>E-Waste facility Near {{place}}</h1>
+        <div class="container">
+          {% for facility in facilities %}
+          <div class="card" style="width: 35rem;">
+            <div class="card-body">
+                  <h5 class="card-title">{{ facility.name }}</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"> {{ facility.address }}</h6>
+                  <a href="/know_credits/{{facility.id}}" class="card-link">Procede with this.</a>
+                  <a href="{{facility.g_map}}" class="card-link">Directions</a>
+                </div>
+              </div>
+        {% endfor %}
+        </div>
+        
+    </div>
+</body>
+</html>

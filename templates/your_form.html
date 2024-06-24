@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Waste Information Form</title>
+</head>
+<body>
+    <h1>Know Your Waste</h1>
+    <p>Fill out the form below to get an analysis of your e-waste.</p>
+
+    <form action="/know_your_waste" method="POST">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required><br>
+
+        <label for="manufacturing_year">Manufacturing Year:</label>
+        <input type="number" id="manufacturing_year" name="manufacturing_year" required><br>
+
+        <label for="model_number">Model Number:</label>
+        <input type="text" id="model_number" name="model_number" required><br>
+
+        <label for="device_brand">Device Brand:</label>
+        <input type="text" id="device_brand" name="device_brand" required><br>
+
+        <label for="device_name">Device Name:</label>
+        <input type="text" id="device_name" name="device_name" required><br>
+
+        <input type="submit" value="Get Analysis">
+    </form>
+</body>
+</html>

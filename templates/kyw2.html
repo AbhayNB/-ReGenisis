@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Waste Information</title>
+</head>
+<body>
+    <h1>E-Waste Categories</h1>
+    <ul>
+        {% for category in categories %}
+            <li>{{ category.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Quantity of Harmful Materials</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Harmful Material</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category in categories %}
+                {% for composition in category.compositions %}
+                    <tr>
+                        <td>{{ category.name }}</td>
+                        <td>{{ composition.harmful_material.name }}</td>
+                        <td>{{ composition.quantity_harmful_material }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Quantity of Precious Metals</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Precious Metal</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category in categories %}
+                {% for composition in category.compositions %}
+                    <tr>
+                        <td>{{ category.name }}</td>
+                        <td>{{ composition.precious_metal.name }}</td>
+                        <td>{{ composition.quantity_precious_metal }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

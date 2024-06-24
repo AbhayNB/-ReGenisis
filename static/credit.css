@@ -1,0 +1,48 @@
+body {
+
+    background-image: url("Simple_Environment.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* width: 100%; */
+}
+
+.main {
+    border: 2px solid rgb(19, 17, 17);
+    border-radius: 23px;
+    background-color: aliceblue;
+    width: 50vw;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 100px auto;
+    box-shadow: 3px 3px 5px rgb(6, 69, 6);
+}
+
+.main img {
+    height: 179px;
+    margin: 5px auto;
+}
+
+.main h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    font-size: 50px;
+}
+
+.btn {
+    margin-top: 60px;
+    border: 3px solid rgb(19, 80, 11);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(71, 176, 57);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(45, 120, 45);
+}

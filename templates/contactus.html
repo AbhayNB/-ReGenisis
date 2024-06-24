@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contactUs.css') }}">
+</head>
+<body>
+    <div class="big-box">
+        <div class="horizontal-container">
+            <div class="box" id="f">
+                <h1 class="text">CONTACT US</h1>
+                <div class="container">
+                    <center>
+                        <form  method="post" action="">
+                            <div class="form">
+                                <input type="text" name="name" required placeholder="Name" class="size">
+                            </div><br>
+                            <div class="form">
+                                <input type="email" name="email" required placeholder="Email" class="size">
+                            </div><br>
+                            <div class="form">
+                                <input type="tel" name="mn" required placeholder="Mobile Number" class="size">
+                            </div><br>
+                            <div>
+                            <textarea name="text" cols="50" rows="8" required placeholder="Message" class="message"></textarea>
+                            </div><br>
+                            <div class="form">
+                                <button type="submit"  value="Submit"  class="btn" >Submit</button>
+                            </div><br>
+                    </center>
+                        </form>
+                    </div>
+            </div>
+            <div class="box" id="box2">
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+-

@@ -1,0 +1,37 @@
+
+	body{
+		background-image: url("picture.jpg");
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+	.form{
+		margin: 245px 0px 0px 0px;
+		color: white;
+		font-size: 50px;
+	}
+	.btn{
+		padding: 5px 8px 5px 8px;
+		margin: 14px 0px 0px 0px;
+		font-size: 20px;
+		border: none;
+		border-radius: 8px;
+	}
+	.btn:hover{
+		background-color:#a4ed9f;
+	}
+
+	.btn1 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: url("chat5.png");
+  background-repeat: no-repeat;
+  color: black;
+  border-radius: 50%;
+  padding:31px;
+  cursor: pointer;
+}
+
+.chat-icon:hover {
+  background-color: #0056b3;
+}
